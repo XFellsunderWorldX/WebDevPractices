@@ -1,0 +1,76 @@
+<!DOCTYPE html >
+<html>
+<head>
+  <meta charset="utf-8" >
+   <title>Blackstone Bistro: Pizza-on-Demand</title>
+   <link src="styles.css" rel="stylesheet" type="tex">
+</head>
+
+<body>
+
+<h1>Blackstone Bistro | Pizza-on-Demand</h1>
+
+<p>Our 12" wood-fired pizzas are available for delivery. Build your custom pizza and we'll deliver it within an hour.</p>
+
+<form action="pizza.php" method="post" name="OrderPizza" target="_blank">
+<fieldset>
+<legend>Your Information</legend>
+<ul>
+  <li>
+    <label for="name">Name:</label>
+    <input id="name" name="name" class="text" type="text">
+  </li>
+  <li>
+    <label for="address">Address:</label>
+    <input id="address" name="Address" class="text" type="text">
+  </li>
+  <li>
+    <label for="telephone">Telephone Number:</label>
+    <input id="telephone" name="Telephone" class="text" type="text">
+  </li>
+  <li>
+    <label for="email">Email:</label>
+    <input id="email" name="Email" class="text" type="text">
+  </li>
+  <li>
+    <label for="delivery">Delivery instructions:</label>
+    <input id="delivery" name="Delivery" class="texboxt" type="textbox">
+  </li>
+</ul>
+</fieldset>
+
+<h2>Design Your Dream Pizza:</h2>
+
+<fieldset>
+<legend>Pizza Specs</legend>
+<fieldset>
+  <legend>Crust <span id="perense">(Choose One)</span></legend>
+<ul>
+  <li>Classic white</li>
+  <li>Multigrain</li>
+  <li>Cheese-stuffed crust</li>
+  <li>Gluten-free</li>
+</ul>
+</fieldset>
+<fieldset>
+    <legend>Toppings<span id="perense">(Choose as many as you would like)</span></legend>
+<ul>
+  <li>Red sauce</li>
+  <li>White sauce</li>
+  <li>Mozzarella Cheese</li>
+  <li>Pepperoni</li>
+  <li>Mushrooms</li>
+  <li>Peppers</li>
+  <li>Anchovies</li>
+</ul>
+</fieldset>
+<fieldset>
+  <legend>Number</legend>
+<p>How many pizzas:<p>
+</fieldset>
+</fieldset>
+<input name ="subButton" type="submit" value="Bring me a pizza" >
+<input name ="resetButton" type="reset" value="reset">
+</form>
+</body>
+</html>
