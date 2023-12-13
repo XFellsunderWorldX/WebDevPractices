@@ -34,8 +34,9 @@
   </li>
   <li>
     <label for="delivery">Delivery instructions:</label>
-    <input id="delivery" name="Delivery" class="texboxt" type="textbox">
+    
   </li>
+  <textarea placeholder="No more than 400 characters long" id="textbox" name="Delivery" class="textbox" maxlength=400></textarea>
 </ul>
 </fieldset>
 
@@ -46,27 +47,67 @@
 <fieldset>
   <legend>Crust <span id="perense">(Choose One)</span></legend>
 <ul>
-  <li>Classic white</li>
-  <li>Multigrain</li>
-  <li>Cheese-stuffed crust</li>
-  <li>Gluten-free</li>
+  <li>
+    <label for="crust">Classic white</label>
+    <input id="crust" name="Crust" class="text" type="radio">
+  </li>
+  <li>
+    <label for="crust">Multigrain</label>
+    <input id="crust" name="Crust" class="text" type="radio">
+  </li>
+  <li>
+    <label for="crust">Cheese-stuffed crust</label>
+    <input id="crust" name="Crust" class="text" type="radio">
+  </li>
+  <li>
+    <label for="crust">Gluten-free</label>
+    <input id="crust" name="Crust" class="text" type="radio">
+  </li>
 </ul>
 </fieldset>
 <fieldset>
     <legend>Toppings<span id="perense">(Choose as many as you would like)</span></legend>
 <ul>
-  <li>Red sauce</li>
-  <li>White sauce</li>
-  <li>Mozzarella Cheese</li>
-  <li>Pepperoni</li>
-  <li>Mushrooms</li>
-  <li>Peppers</li>
-  <li>Anchovies</li>
+  <li>
+    <label for="red">Red sauce</label>
+    <input id="red" name="Red" class="text" type="checkbox">
+  </li>
+  <li>
+    <label for="white">White sauce</label>
+    <input id="white" name="White" class="text" type="checkbox">
+  </li>
+  <li>
+    <label for="Mozzarella">Mozzarella Cheese</label>
+    <input id="Mozzarella" name="Mozzarella" class="text" type="checkbox">
+  </li>
+  <li>
+    <label for="Pepperoni">Pepperoni</label>
+    <input id="Pepperoni" name="Pepperoni" class="text" type="checkbox">
+  </li>
+  <li>
+    <label for="Mushrooms">Mushrooms</label>
+    <input id="Mushrooms" name="Mushrooms" class="text" type="checkbox">
+  </li>
+  <li>
+    <label for="Peppers">Peppers</label>
+    <input id="Peppers" name="Peppers" class="text" type="checkbox">
+  </li>
+  <li>
+    <label for="Anchovies">Anchovies</label>
+    <input id="Anchovies" name="Anchovies" class="text" type="checkbox">
+  </li>
 </ul>
 </fieldset>
 <fieldset>
   <legend>Number</legend>
-<p>How many pizzas:<p>
+<p>
+  <label for="pizzas">How many pizzas:</label>
+  <select name="pizzas" id="pizzas" class="dropdown" type="dropdown">
+    <option value="pizza">1</option> 
+    <option value="pizza">2</option> 
+    <option value="pizza">3</option> 
+    <option value="pizza">4</option> 
+  <p>
 </fieldset>
 </fieldset>
 <input name ="subButton" type="submit" value="Bring me a pizza" >
